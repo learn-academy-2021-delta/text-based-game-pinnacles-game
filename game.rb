@@ -1,9 +1,5 @@
 life = 2
-item_count = 0
-ghost = false
-puts 'Enter your name:'
-name = gets.chomp
-puts "Ghoul-d Evening #{name}"
+
 'You are about to enter the Haunted Mansion and encounter many challenges, obstacles, and, of course, my ghostly friends...Ha Ha Ha Ha Haaaaa!'.each_char do |value|
     putc value
     sleep 0.05
@@ -52,7 +48,7 @@ when 'no'
 else
   puts "You fool....the only answer I am expecting is yes!  Get in there!"
 end
-# Choose your weapon
+
 puts "Now that you are in the house you will need a weapon to fend off these ghosts, well, my friends!"
 puts "How about a ghost vacuum or holy water or magic torch"
 case (gets.chomp)
@@ -76,38 +72,20 @@ when "livingroom"
 else
   puts "lets just check out the kitchen"
 end
-# In the kitchen
+
 puts "Lets explore... would you like to look in the fridge or the pantry?"
 puts "Please enter: fridge, or pantry."
 case (gets.chomp)
 when "fridge"
   puts "LOOK! a peice of meat! This could come in handy later!"
 when "pantry"
-  puts "
+
   .-.
   (o o) boo!
   | O \
    \   \
-    `~~~' "
 
-    puts "OH NO!!! You just encountered your first ghost... there goes a life point"
-else
-  puts "OH NO!!! You just encountered your first ghost... there goes a life point"
-end
 
-  # player_action = gets.chomp
-  #   if ghost?
-  #     life = life -1
-  #     puts "You were attacked by a ghost and lost a life point"
-  #   end
-
-  # if live > 0
-  #   puts "You escaped!"
-  # else
-  #   puts "Lose one more life point and you won't be happy...or alive!"
-  # end
-
-# Bathroom
 puts "Lets check out the bathroom, you wanna look at the medicine cabinet or the bath tub first?"
 puts "Please enter: cabinet, or tub."
 case (gets.chomp)
@@ -116,9 +94,11 @@ when "cabinet"
 when "tub"
   puts "you just got bit by a ware wolf! You lost one of your lives #{life - 1}"
 else
-  puts "OH NO!!! It's a vampire, you lost one of your lives #{life - 1}"
+  puts "OH NO!!! It's a vampire, you lost one of your lives #{life - 1}"    
 end
+
 # Living Room
+
 puts "The living room looks safe... you want to sit for a minut on the couch, or check out the window to see if help is comming?"
 puts "Please enter: couch, window."
 case (gets.chomp)
@@ -127,23 +107,21 @@ when "couch"
 when "window"
     puts "OH NO!!! It's a vampire, you lost one of your lives #{life - 1}"
 else
-  puts "OH NO!!! It's a vampire, you lost one of your lives #{life - 1}"
+  puts "OH NO!!! It's a vampire, you lost one of your lives #{life - 1}"    
 end
-# Basement
-puts "There's a noise comming from downstairs, lets go check it out!"
 
-'You look around... the lights are flickering and you see what looks to be the scene of a major labratory explosion... there are bodies on the floor and some of them look like they are coming to life!!'.each_char do |value|
-  putc value
-  sleep 0.03
-end
+# Basement
+
+puts "There's a noise comming from downstairs, lets go check it out!"
+puts "You look around... the lights are flickering and you see what looks to be the scene of a major labratory explosion... there are bodies on the floor and some of them look like they are coming to life!!"
 puts "Wait... is that a trap door on the other side of the room? Lets try to get out of here. But first we need to get past these Zombies."
 puts "Now would be a good time for that mummies curse...: if you have the curse type curse, if not... proceed with caution"
 case (gets.chomp)
 when "curse"
   puts "You made it out alive!!!"
 else
-  puts "We are gathered here today in loving memmory of #{name}, may they rest in pieces."
-  puts "
+  puts "We are gathered here today in loving memmory of #{name}, may they rest in pieces.
+
                 _____  _____
                |     `/     |
                |             |
@@ -165,10 +143,5 @@ _/                                       \|     |
                  %|            |%
              |/.%%|          -< @%%%
              `\%`@|     v      |@@%@%%    - mfj
-      _.%%%%%%@@@@@@%%_/%\_%@@%%@@@@@@@%%%%%%    "
+      _.%%%%%%@@@@@@%%_/%\_%@@%%@@@@@@@%%%%%%"    
 end
-
-
-
-
-
